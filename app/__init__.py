@@ -7,6 +7,17 @@ from dotenv import load_dotenv
 # Load environment variables from your .env file
 load_dotenv()
 
+# Check if running on a server (Render) or local
+if os.environ.get('FIREBASE_CONFIG'):
+    # Parse the JSON string from the environment variable
+    service_account_info = json.loads(os.environ.get('FIREBASE_CONFIG'))
+    cred = credentials.Certificate(service_account_info)
+else:
+    # Local development
+    cred = credentials.Certificate('serviceAccountKey.json')
+
+firebase_admin.initialize_app(cred)
+
 def create_app():
     # Initialize the Flask application
     app = Flask(__name__)
