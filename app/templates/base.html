@@ -108,44 +108,41 @@
         <div class="absolute -bottom-32 left-1/2 w-96 h-96 bg-purple-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-4000"></div>
     </div>
 
-<!-- Upgraded Premium Navbar -->
-    <nav class="sticky top-0 z-50 w-full bg-darkBg/60 backdrop-blur-xl border-b border-white/5 shadow-lg">
-        <!-- Mobile Hamburger Button (Visible only on small screens) -->
-<div class="md:hidden flex items-center z-50">
-    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-md transition-colors">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-    </button>
-</div>
-        <!-- Changed to a grid layout, increased max-width to 7xl, and increased vertical padding (py-5) -->
-        <div class="max-w-7xl mx-auto px-6 py-5 grid grid-cols-3 items-center">
-            
-            <!-- Left Column: Larger Logo -->
-            <div class="flex justify-start">
-                <a href="/" class="text-3xl font-extrabold tracking-tighter text-white hover:opacity-80 transition drop-shadow-md">
-                    A<span class="text-blue-500">M</span>
-                </a>
-            </div>
+<!-- ========================= MAC OS STYLE HEADER ========================= -->
+<nav id="mac-dock" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-3 bg-[#090e17]/60 backdrop-blur-xl border border-white/10 shadow-2xl rounded-3xl">
+    
+    <!-- Home -->
+    <a href="#home" class="dock-item flex justify-center items-center w-12 h-12 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 text-slate-400 hover:text-white group relative">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+        <!-- Tooltip -->
+        <span class="absolute -bottom-8 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Home</span>
+    </a>
 
-            <!-- Center Column: Navigation Links -->
-            <!-- Center Column: Navigation Links -->
-            <!-- Center Column: Navigation Links -->
-<div class="hidden md:flex justify-center space-x-8 text-base font-semibold text-slate-300">
-    <a href="#home" class="hover:text-white hover:-translate-y-0.5 transition duration-300">Home</a>
-    <a href="#about" class="hover:text-white hover:-translate-y-0.5 transition duration-300">About</a>
-    <a href="#journey" class="hover:text-white hover:-translate-y-0.5 transition duration-300">Journey</a>
-    <a href="#highlights" class="hover:text-white hover:-translate-y-0.5 transition duration-300">Highlights</a>
-    <a href="#projects" class="hover:text-white hover:-translate-y-0.5 transition duration-300">GitHub</a>
-</div>
+    <!-- Arsenal (Tech) -->
+    <a href="#skills" class="dock-item flex justify-center items-center w-12 h-12 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 text-slate-400 hover:text-white group relative">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+        <span class="absolute -bottom-8 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Arsenal</span>
+    </a>
 
-            <!-- Right Column: Action Button (Balances the layout) -->
-            <div class="flex justify-end">
-                
-            </div>
+    <!-- Journey -->
+    <a href="#journey" class="dock-item flex justify-center items-center w-12 h-12 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 text-slate-400 hover:text-white group relative">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        <span class="absolute -bottom-8 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Journey</span>
+    </a>
 
-        </div>
-    </nav>
+    <!-- Projects -->
+    <a href="#projects" class="dock-item flex justify-center items-center w-12 h-12 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 text-slate-400 hover:text-white group relative">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+        <span class="absolute -bottom-8 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Projects</span>
+    </a>
+
+    <!-- Contact -->
+    <a href="#contact" class="dock-item flex justify-center items-center w-12 h-12 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10 text-slate-400 hover:text-white group relative">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+        <span class="absolute -bottom-8 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Contact</span>
+    </a>
+    
+</nav>
 
     <!-- Mobile Menu Overlay -->
 <div id="mobile-menu" class="fixed inset-0 bg-[#090e17]/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden flex flex-col items-center justify-center space-y-8 text-2xl font-bold">
@@ -154,7 +151,7 @@
     <a href="#skills" class="mobile-link text-slate-400 hover:text-white hover:scale-110 transition-all duration-300">Arsenal</a>
     <a href="#journey" class="mobile-link text-slate-400 hover:text-white hover:scale-110 transition-all duration-300">Journey</a>
     <a href="#highlights" class="mobile-link text-slate-400 hover:text-white hover:scale-110 transition-all duration-300">Highlights</a>
-    <a href="#projects" class="mobile-link text-slate-400 hover:text-white hover:scale-110 transition-all duration-300">GitHub</a>
+    <a href="#projects" class="mobile-link text-slate-400 hover:text-white hover:scale-110 transition-all duration-300">Projects</a>
     
     <!-- Mobile Resume Button -->
     <a href="{{ url_for('main.download_resume') }}" class="mobile-link mt-8 px-8 py-4 rounded-full bg-blue-600 text-white font-bold text-lg shadow-[0_0_30px_rgba(37,99,235,0.4)]">
@@ -549,6 +546,48 @@
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (isMenuOpen) toggleMenu();
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const dock = document.getElementById('mac-dock');
+        const items = document.querySelectorAll('.dock-item');
+        
+        // Settings
+        const maxScale = 1.5;     // How big the hovered item gets (150%)
+        const maxDistance = 150;  // Pixel radius that affects neighboring items
+
+        dock.addEventListener('mousemove', (e) => {
+            items.forEach(item => {
+                // Get the exact center X coordinate of the item
+                const rect = item.getBoundingClientRect();
+                const itemCenterX = rect.left + rect.width / 2;
+                
+                // Calculate distance from cursor to item center
+                const distance = Math.abs(e.clientX - itemCenterX);
+                
+                // If cursor is near the item, calculate scale
+                let scale = 1;
+                if (distance < maxDistance) {
+                    // Create a smooth decay curve (closer = bigger)
+                    scale = 1 + (maxScale - 1) * Math.pow((1 - distance / maxDistance), 2);
+                }
+
+                // Apply the scale and adjust margins to push neighbors away cleanly
+                item.style.transform = `scale(${scale})`;
+                item.style.margin = `0 ${scale * 4}px`;
+                item.style.transition = 'transform 50ms ease-out, margin 50ms ease-out';
+            });
+        });
+
+        // When mouse leaves the dock entirely, snap everything back to normal
+        dock.addEventListener('mouseleave', () => {
+            items.forEach(item => {
+                item.style.transform = `scale(1)`;
+                item.style.margin = `0 0`;
+                item.style.transition = 'transform 300ms ease-out, margin 300ms ease-out';
             });
         });
     });
