@@ -682,7 +682,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     try {
         // 1. Fetch raw data from GitHub API
-        const response = await fetch(`https://api.github.com/users/${githubUsername}/events`);
+        const response = await fetch(`https://api.github.com/users/$mirarsalan2006-ship-it/events`);
         const events = await response.json();
 
         // 2. Process data to count commits per day (Last 10 active days)
